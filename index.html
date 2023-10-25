@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Bankist</title>
+  </head>
+  <body>
+    <nav>
+      <img src="logo.png" alt="overlapping 90 degree eights" class="logo" />
+      <p class="greeting">Log in to get started</p>
+      <form class="input" action="">
+        <input type="text" name="username" id="username" placeholder="user" />
+        <input type="text" name="PIN" id="password" placeholder="PIN" />
+        <button class="btn-log-in">&RightArrow;</button>
+      </form>
+    </nav>
+    <main class="hidden">
+      <section class="balance-container">
+        <p class="label-balance">Current balance</p>
+        <p class="date">DATE</p>
+        <p><span class="current-balance">0000</span></p>
+      </section>
+      <section class="movements-container">
+        <div class="movement">
+          <p class="mov-deposit">2 Deposit</p>
+          <p class="mov-date">DATE</p>
+          <p class="mov-value">1000 €</p>
+        </div>
+        <div class="movement">
+          <p class="mov-withdrawal">1 Withdrawal</p>
+          <p class="mov-date">DATE</p>
+          <p class="mov-value">-2500 €</p>
+        </div>
+      </section>
+
+      <form class="transfer-container">
+        <div class="grid-container">
+          <p class="label-text">Transfer money</p>
+          <input class="input-box" type="text" id="transfer-to" />
+          <label class="label-input-1" for="transfer-to">Transfer to</label>
+          <input class="input-box" type="number" id="amount" />
+          <label class="label-input-2" for="amount">Amount</label>
+          <button class="btn-arrow">&RightArrow;</button>
+        </div>
+      </form>
+      <form class="request-container">
+        <div class="grid-container-mid">
+          <p class="label-text">Request loan</p>
+          <input class="input-box" type="text" id="request-loan" />
+          <label class="label-input-1" for="request-loan">Amount</label>
+
+          <button class="btn-arrow-mid">&RightArrow;</button>
+        </div>
+      </form>
+      <form class="close-acc-container">
+        <div class="grid-container">
+          <p class="label-text">Close account</p>
+          <input class="input-box" type="text" id="close-account" />
+          <label class="label-input-1" for="close-account">Confirm user</label>
+          <input class="input-box" type="password" id="pin" />
+          <label class="label-input-2" for="pin">Confirm PIN</label>
+          <button class="btn-arrow btn-close-account">&RightArrow;</button>
+        </div>
+      </form>
+
+      <section class="summary">
+        <p>
+          IN <span class="in">27 000,20</span
+          ><span class="currency-green"></span>
+        </p>
+        <p>
+          OUT <span class="out">1000,20</span><span class="currency-red"></span>
+        </p>
+        <p>
+          INTEREST <span class="interest">323,20</span
+          ><span class="currency-green"></span>
+        </p>
+        <button class="btn-sort">&DownArrow; SORT</button>
+      </section>
+      <p class="timer-label">
+        You will be logged out in <span class="timer">10:00</span>
+      </p>
+    </main>
+  </body>
+</html>
