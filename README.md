@@ -17,3 +17,7 @@ pass-2222
 <h2>HOW TO START:</h2>
 
 - <b>Live server extension (Open with live server)</b>
+
+<h2>Project screenshot</h2>
+
+<img src="https://i.imgur.com/5HXfgW2.png" height="80%" width="80%" alt="bank account"/>
